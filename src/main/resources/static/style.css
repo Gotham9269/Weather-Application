@@ -1,34 +1,64 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin-top: 60px;
-    background: #e0f7fa;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.weather-container {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    display: inline-block;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+body {
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  text-align: center;
+  width: 300px;
+}
+
+.container h2 {
+  margin-bottom: 15px;
+  color: #333;
 }
 
 input {
-    padding: 8px;
-    width: 200px;
-    margin-right: 10px;
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 15px;
+  font-size: 16px;
 }
 
 button {
-    padding: 8px 16px;
-    background-color: #0277bd;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
+  padding: 10px 20px;
+  background-color: #4facfe;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-#result {
-    margin-top: 20px;
-    font-size: 18px;
+button:hover {
+  background-color: #00f2fe;
+}
+
+.weather-info {
+  margin-top: 20px;
+  color: #444;
+}
+
+.weather-icon {
+  width: 80px;
+  margin-bottom: 10px;
 }
